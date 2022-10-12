@@ -26,8 +26,10 @@
     </label>
     <br>
     <label>
-        Enter a noun:
-        <input type="text" name="noun" >
+        What is your mode of transport?
+        <input type="checkbox" name="transport" value="car" {% if transport == car %} checked=true {% endif %}> Car
+        <input type="checkbox" name="transport" value="bike"{% if transport == bike %} checked=true {% endif %}> Bike
+
     </label> 
     <br>
     <label>
@@ -36,8 +38,14 @@
     </label> 
     <br>
     <label>
-        Enter adverb:
-        <input type="text" name="adverb">
+        Choose adverb:
+        <select name="adverb" id="select-adverb">
+            <option value="readily">readily</option>
+            <option value="often">often</option>
+            <option value="backwards">backwords</option>
+            <option value="extrmely">extremely</option>
+            <option value="increadibly">increadibly</option>
+        </select>
     </label>
     <br>
     <label>

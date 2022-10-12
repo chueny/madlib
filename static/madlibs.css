@@ -2,9 +2,10 @@ h1 {
     color: blue;
 }
 
-input {
+input, select {
     margin-bottom: 10px;
     border-radius: 50px;
+    border-width: thin;
 }
 
 label {
